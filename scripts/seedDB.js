@@ -9,11 +9,11 @@ mongoose.connect(
 );
 
 const bookSeed = {
-    authors: [],
+    authors: ["George R.R. Martin"],
     description: "",
     image: "",
-    link: "",
-    title: "",
+    link: "https://books.google.com/books?id=btpIkZ6X6egC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false",
+    title: "A Game of Thrones",
 }
 
 db.Book
