@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-import { Row, Col } from "../Grid";
+import { Row, Col } from "../Layout";
 
-const SavedResult = props => {
+const SavedSearch = props => {
     return (props.savedBooks.length === 0 ) ? (
         <div className="card">
             <div className="card-body player">
@@ -62,4 +62,4 @@ const SavedResult = props => {
 }
 
 //export saved result
-export default SavedResult
+export default SavedSearch

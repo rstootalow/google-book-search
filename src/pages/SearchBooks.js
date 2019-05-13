@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Jumbotron from "../components/Jumbotron";
-import { Container, Row, Col } from "../components/Grid";
-import SearchForm from "../components/SearchForm";
+import MainContent from "../components/MainContent";
+import { Container, Row, Col } from "../components/Layout";
+import Form from "../components/Form";
 import SearchResult from "../components/SearchResult";
 
 class SearchBook extends Component {
@@ -61,16 +61,16 @@ class SearchBook extends Component {
     render() {
         return (
             <Container fluid>
-                <Jumbotron>
+                <MainContent>
                     <h1 className="text-white">Find Your Favorite Books through the Google API!</h1>
-                </Jumbotron>
+                </MainContent>
                 <Container>
                     <Row>
                         <Col size="12">
-                            <SearchForm
+                            <Form>
                                 handleFormSubmit={this.handleFormSubmit}
                                 handleInputChange={this.handleInputChange}
-                            />
+                            </Form>
                         </Col>
                     </Row>
                 </Container>

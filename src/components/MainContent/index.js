@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Jumbotron({ children }) {
+function MainContent({ children }) {
     return (
         <div className="jumbotron jumbotron-fluid d-flex align-items-center">
             <div className="container text-center">
@@ -11,5 +11,5 @@ function Jumbotron({ children }) {
     );
 }
 
-export default Jumbotron;
+export default MainContent;
 

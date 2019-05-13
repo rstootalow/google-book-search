@@ -20,7 +20,6 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </Nav>
-        {/* Self closing footer tag */}
         <Footer />
       </div>
     </Router>

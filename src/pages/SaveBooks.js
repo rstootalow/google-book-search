@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Jumbotron from "../compnents/Jumbotron";
-import { Container } from "../compnents/Grid";
-import SavedResult from "../compnents/SavedResult";
+import MainContent from "../components/MainContent";
+import { Container } from "../components/Layout";
+import SavedSearch from "../components/SavedSearch";
 
 class SaveBook extends Component {
     state = {
@@ -27,11 +27,11 @@ class SaveBook extends Component {
     render() {
         return (
             <Container fluid className="container">
-                <Jumbotron>
+                <MainContent>
                     <Container>
-                        <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
+                        <SavedSearch savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
                     </Container>
-                </Jumbotron>
+                </MainContent>
             </Container>
         )
     }

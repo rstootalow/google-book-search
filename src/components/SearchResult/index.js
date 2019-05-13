@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Row, Col} from "../Grid";
+import { Row, Col} from "../Layout";
 
 const SearchResult = props => {
     return (props.books.length === 0 ) ? (
