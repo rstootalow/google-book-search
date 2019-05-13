@@ -5,15 +5,15 @@ export default {
     // leverage google book search api
     getGoogleSearchBooks: function(query) {
         return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query)
-    };
+    },
 
     //get all books
     getBooks: function() {
-        return: axios.get("/api/books")
+        return axios.get("/api/books")
     },
 
     //get book with specific id
-    getBook: function() {
+    getBook: function(id) {
         return axios.get("/api/books" + id);
     },
 

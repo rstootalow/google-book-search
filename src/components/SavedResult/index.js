@@ -18,7 +18,7 @@ const SavedResult = props => {
                     <h3>Saved Books</h3>
                     {props.savedBooks.map(savedbook => {
                         return (
-                            <li classname="saved-list list-group-item">
+                            <li className="saved-list list-group-item">
                                 <Row className="SearchResult" id={savedbook.title + "Card"} key={savedbook._id}>
                                     <Col size="2" className="bookImage">
                                         <img src={savedbook.image} alt={savedbook.title}  />
@@ -41,7 +41,7 @@ const SavedResult = props => {
                                     </Col>
                                 </Row>
                                 <br></br>
-                                {/* Adding delele button to book card */}
+                                {/* Adding delete button to book card */}
                                 <Row className="buttonDiv ">
                                     <button className="deleteBook btn btn-danger" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
                                         Delete Book

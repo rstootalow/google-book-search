@@ -13,8 +13,8 @@ const SearchResult = props => {
         </div>
     ) : (
         <div className="card">
-            <div classname="card-body player">
-                <div classname="article">
+            <div className="card-body player">
+                <div className="article">
                     <h3>Book Search Results</h3>
                     {props.books.map(book => {
                         return (
@@ -24,7 +24,7 @@ const SearchResult = props => {
                                         <img src={book.image} alt={book.title} />
                                     </Col>
                                     <Col size="1" className="emptyCol" />
-                                    <Col size="9" classname="bookInfo">
+                                    <Col size="9" className="bookInfo">
                                         <Row>
                                              <h3 className="bookTitle">{book.title}</h3>
                                         </Row>
@@ -57,4 +57,4 @@ const SearchResult = props => {
 }
 
 //export seacrhResult component
-export default SearchFault;
+export default SearchResult;

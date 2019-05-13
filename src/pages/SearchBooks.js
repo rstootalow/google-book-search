@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Jumbotron from "../compnents/Jumbotron";
-import { Container, Row, COl } from "../compnents/Grid";
-import SearchForm from "../compnents/SearchFrom";
-import SearchResult from "../compnents/SearchResult";
+import Jumbotron from "../components/Jumbotron";
+import { Container, Row, Col } from "../components/Grid";
+import SearchForm from "../components/SearchForm";
+import SearchResult from "../components/SearchResult";
 
-class SearchBooks extends Component {
+class SearchBook extends Component {
     state = {
         search: "",
         books: [],
@@ -30,7 +30,7 @@ class SearchBooks extends Component {
                     //store book information in newly created object
                     result = {
                         key: result.id,
-                        id = result.id,
+                        id: result.id,
                         title: result.volumeInfo.title,
                         author: result.volumeInfo.authors,
                         description: result.volumeInfo.description,
@@ -84,4 +84,4 @@ class SearchBooks extends Component {
 }
 
 //export SearchBooks
-export default SearchBooks
+export default SearchBook

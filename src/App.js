@@ -17,7 +17,7 @@ function App() {
             <Route exact path="/" component={SearchBooks} />
             <Route exact path="/saved" component={SaveBooks} />
             <Route exact path="/saved/:id" component={SaveBooks} />
-            <Route compnent={NoMatch} />
+            <Route component={NoMatch} />
           </Switch>
         </Nav>
         {/* Self closing footer tag */}

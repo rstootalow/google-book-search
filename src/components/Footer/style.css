@@ -1,13 +1,13 @@
 footer {
     width: 100%;
     height: 50px;
-    background-color: blue;
-    /* font-family:; */
+    background-color: black;
     text-align: center;
     color: white;
+    position: absolute;
+    bottom: 0;
 }
-
 p {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 20px
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import API from "../utils/API";
 import Jumbotron from "../compnents/Jumbotron";
 import { Container } from "../compnents/Grid";
